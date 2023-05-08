@@ -1,0 +1,34 @@
+/*selecteur*/
+#Header{
+    /*Dans Header il ya <p> pour le logo et <ul> pour les liens
+    puis que les deux sont des elements contenu dans header alors on applique un display->flex
+    et un align-items->center.
+    puis le justify-content permet de nous faire une disposition espacée de deux elements dans le #header
+    avec une largeur de 100% pour occuper tout l'ecran*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#Header ul li{
+    /*on annule le style de <ul> et en le met tous en ligne droite avec display->inline-block et la marge exterieur en pixel*/
+    list-style: none;
+    margin-left:10px;
+    display:inline-block;
+}
+
+#Header ul li a{
+    /*on enleve le soulignement de des liens avec text-decoration->none et on met la couleur du text en gris-foncé*/
+   text-decoration: none;
+   color:rgb(59, 57, 59);
+}
+
+
+
+
+
